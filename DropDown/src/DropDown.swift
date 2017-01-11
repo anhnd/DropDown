@@ -736,7 +736,7 @@ extension DropDown {
 	*/
 	@discardableResult
 	public func show() -> (canBeDisplayed: Bool, offscreenHeight: CGFloat?) {
-		if self == DropDown.VisibleDropDown {
+		if self == DropDown.VisibleDropDown && DropDown.VisibleDropDown?.isHidden == false {
 			return (true, 0)
 		}
 
