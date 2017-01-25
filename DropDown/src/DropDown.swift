@@ -771,7 +771,7 @@ extension DropDown {
 			withDuration: animationduration,
 			delay: 0,
 			options: animationEntranceOptions,
-			animations: { [unowned self] in
+			animations: {
 				self.setShowedState()
 			},
 			completion: nil)
@@ -800,10 +800,10 @@ extension DropDown {
 			withDuration: animationduration,
 			delay: 0,
 			options: animationExitOptions,
-			animations: { [unowned self] in
+			animations: {
 				self.setHiddentState()
 			},
-			completion: { [unowned self] finished in
+			completion: { finished in
 				self.isHidden = true
 				self.removeFromSuperview()
 			})
