@@ -359,6 +359,7 @@ public final class DropDown: UIView {
 	//MARK: - Init's
 
 	deinit {
+        print("deinit DropDown")
 		stopListeningToNotifications()
 	}
 
