@@ -42,6 +42,10 @@ extension UIBarButtonItem: AnchorView {
 /// A Material Design drop down in replacement for `UIPickerView`.
 public final class DropDown: UIView {
 
+    deinit {
+        print("Dropdown deinit")
+    }
+    
 	//TODO: handle iOS 7 landscape mode
 
 	/// The dismiss mode for a drop down.
@@ -451,10 +455,6 @@ private extension DropDown {
 		setHiddentState()
 		isHidden = true
 	}
-    
-    deinit {
-        print("Dropdown deinit")
-    }
 
 }
 
