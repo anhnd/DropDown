@@ -823,6 +823,10 @@ extension DropDown {
 		tableViewContainer.transform = CGAffineTransform.identity
 	}
 
+    
+    deinit {
+        print("Dropdown deinit")
+    }
 }
 
 //MARK: - UITableView
@@ -933,10 +937,6 @@ extension DropDown: UITableViewDataSource, UITableViewDelegate {
 		}
 
 		hide()
-	}
-    
-    deinit {
-        print("Dropdown deinit")
     }
 
 }
