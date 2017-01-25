@@ -451,6 +451,10 @@ private extension DropDown {
 		setHiddentState()
 		isHidden = true
 	}
+    
+    deinit {
+        print("Dropdown deinit")
+    }
 
 }
 
@@ -823,10 +827,6 @@ extension DropDown {
 		tableViewContainer.transform = CGAffineTransform.identity
 	}
 
-    
-    deinit {
-        print("Dropdown deinit")
-    }
 }
 
 //MARK: - UITableView
