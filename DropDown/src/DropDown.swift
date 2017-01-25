@@ -934,6 +934,10 @@ extension DropDown: UITableViewDataSource, UITableViewDelegate {
 
 		hide()
 	}
+    
+    deinit {
+        print("Dropdown deinit")
+    }
 
 }
 
